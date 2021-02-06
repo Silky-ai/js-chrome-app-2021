@@ -1,0 +1,132 @@
+@import "reset.css";
+
+.form,
+.greetings {
+  display: none;
+}
+
+.showing {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.bgImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+  animation: fadeIn 0.3s linear;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+body {
+  background-color: rgb(38, 122, 148);
+  color: white;
+}
+.clock {
+  display: flex;
+  justify-content: center;
+  margin-top: 20%;
+  font-size: 120px;
+  font-weight: 500;
+}
+.greetings {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+  font-size: 50px;
+}
+.form__toDo {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.form__toDo input {
+  border: none;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  border-bottom: 3px solid white;
+  color: white;
+  font-weight: 600;
+  height: 35px;
+  width: 200px;
+}
+.form__toDo input[type="text"] {
+  font-size: 30px;
+}
+.form__toDo input::placeholder {
+  color: white;
+  font-size: 30px;
+}
+.form__toDo :focus {
+  outline: none;
+}
+.showing {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.showing input {
+  border: none;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  border-bottom: 3px solid white;
+  color: white;
+  font-weight: 600;
+  width: 400px;
+  height: 50px;
+}
+.showing input[type="text"] {
+  font-size: 40px;
+}
+.showing input::placeholder {
+  color: white;
+  font-size: 40px;
+}
+.showing input:focus {
+  outline: none;
+}
+.weather {
+  position: absolute;
+  top: 5px;
+  right: 3px;
+}
+.toDoList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+li {
+  margin-top: 10px;
+}
+li span {
+  margin-right: 10px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+li button {
+  border: none;
+  background-color: transparent;
+  color: red;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+li button:hover {
+  cursor: pointer;
+}
